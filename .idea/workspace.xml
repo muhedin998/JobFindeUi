@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d84d632-7b7f-4432-9436-f395e63b7f4b" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/119f90cc5d5de56ccda0eb5728313120.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/3d4867b65dff2efe52fc48ccf3d3129b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/64c8530ed3c38482b88dd569fa5db1b4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/76e468b60514152ac35fc0cf4a1055be.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/7a000ed9460782c26dbfef3f6077cbf0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/8ed4ef1f11fbdc278be6ce5b9f6025d8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/config/auth.interceptors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/authenticate.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/authenticate.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/header.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/header.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Z37HSl1VkEikYjrYC1WOvWMJMU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ALIC/Desktop/New folder (2)/JobFindeUi&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ALIC\\Desktop\\New folder (2)\\JobFindeUi\\node_modules\\typescript\\lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ALIC\Desktop\New folder (2)\JobFindeUi\src\assets\images" />
+      <recent name="C:\Users\ALIC\Desktop\New folder (2)\JobFindeUi\src\app" />
+      <recent name="C:\Users\ALIC\Desktop\New folder (2)\JobFindeUi\src\app\ui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d84d632-7b7f-4432-9436-f395e63b7f4b" name="Changes" comment="" />
+      <created>1701638820465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701638820465</updated>
+      <workItem from="1701638821769" duration="3949000" />
+      <workItem from="1702245341781" duration="1763000" />
+      <workItem from="1702389591960" duration="63000" />
+      <workItem from="1702391281738" duration="4761000" />
+      <workItem from="1702599342960" duration="3751000" />
+      <workItem from="1702641814394" duration="54000" />
+      <workItem from="1702655948466" duration="7037000" />
+      <workItem from="1702753504026" duration="1052000" />
+      <workItem from="1702754571478" duration="3381000" />
+      <workItem from="1702934699967" duration="36000" />
+      <workItem from="1703015317605" duration="6889000" />
+      <workItem from="1703200151545" duration="3013000" />
+      <workItem from="1703629186279" duration="7429000" />
+      <workItem from="1703642152555" duration="743000" />
+      <workItem from="1703680848510" duration="4728000" />
+    </task>
+    <task id="LOCAL-00001" summary="changes">
+      <created>1703635344607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703635344607</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+  </component>
+</project>

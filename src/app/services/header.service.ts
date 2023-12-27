@@ -19,7 +19,7 @@ export class HeaderService {
     return this.store.select(getUserSelector);
   }
 
-  loggoutUser(user: Observable<UserVo>): void {
+  loggoutUser(user: Observable<UserVo> | undefined): void {
     this.userService.loggoutUser(user)
   }
 }

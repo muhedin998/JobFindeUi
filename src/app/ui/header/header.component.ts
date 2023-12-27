@@ -9,12 +9,13 @@ import {UserVo} from "../../models/userVo.model";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  user$: Observable<UserVo> = this.headerService.getCurrentUser();
-  userFullName$: Observable<string> =this.user$.pipe(
+  user$?: Observable<UserVo>;
+  userFullName$?: Observable<string> =this.user$?.pipe(
       map(user => user.fullName));
   constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
+    this.user$ = this.headerService.getCurrentUser();
   }
 
   logout() {

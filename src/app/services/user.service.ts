@@ -41,7 +41,7 @@ export class UserService {
     this.store.dispatch(new AddUser(this.userToUserVo(data.user)))
   }
 
-  loggoutUser(user: Observable<UserVo>) {
+  loggoutUser(user: Observable<UserVo> | undefined) {
     sessionStorage.removeItem('token')
     this.store.dispatch(new RemoveUser())
   }
