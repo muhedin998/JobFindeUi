@@ -9,6 +9,9 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { HomeComponent } from './ui/pages/home/home.component';
 import { LoginComponent } from './ui/pages/login/login.component';
 import { RegisterComponent } from './ui/pages/register/register.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {StoreModule} from "@ngrx/store";
+import {appReducers} from "./core/store/reducers/app.reducers";
 
 @NgModule({
   declarations: [
@@ -19,11 +22,13 @@ import { RegisterComponent } from './ui/pages/register/register.component';
     LoginComponent,
     RegisterComponent
   ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        HttpClientModule,
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        StoreModule.forRoot(appReducers)
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

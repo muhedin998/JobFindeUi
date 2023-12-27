@@ -8,7 +8,4 @@ import {AppService} from "./services/app.service";
 })
 export class AppComponent {
   title = 'jobfinder-ui';
-  constructor(private appService: AppService) {
-    appService.getJobPostings().subscribe(data => console.log((data)))
-  }
 }

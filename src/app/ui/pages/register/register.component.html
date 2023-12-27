@@ -1,1 +1,39 @@
-<p>register works!</p>
+<div class="d-flex justify-content-center align-items-center login-page">
+    <div class="frm-contaier">
+        <form class="frm " [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full name</label>
+                <input type="text"  class="form-control" id="fullName" formControlName="fullName" aria-describedby="fullName">
+                <div class="err-message" *ngIf="isFieldInvalid('fullName') && (form.get('fullName')?.dirty || form.get('fullName')?.touched)">
+                    Full Name is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" formControlName="username" aria-describedby="username">
+                <div class="err-message" *ngIf="isFieldInvalid('username') && (form.get('username')?.dirty || form.get('username')?.touched)">
+                    Username is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="err-message" *ngIf="isFieldInvalid('email') && (form.get('email')?.dirty || form.get('email')?.touched)">
+                    Email is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm password</label>
+                <input type="password" class="form-control" formControlName="confirmPassword" id="confirmPassword">
+                <div class="err-message" *ngIf="form.hasError('passwordMismatch') && (form.get('confirmPassword')?.dirty || form.get('confirmPassword')?.touched)">
+                    Passwords do not match.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>

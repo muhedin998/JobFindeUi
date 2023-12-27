@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="d-flex justify-content-center align-items-center login-page">
+    <div class="frm-contaier">
+        <form class="frm " [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="exampleInputusername" class="form-label">Email address</label>
+                <input type="username" class="form-control"  formControlName="username" id="exampleInputusername" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>

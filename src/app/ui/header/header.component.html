@@ -15,12 +15,22 @@
             <li class="nav-item">
               <a routerLink="" class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            <ng-container *ngIf="userFullName$ | async as user; else noUser">
+              <li class="nav-item">
+                <p class="nav-link">Hello {{ user }}</p>
+              </li>
+              <li class="nav-item">
+                <button type="button" (click)="logout()"  class="nav-link">Logout</button>
+              </li>
+            </ng-container>
+            <ng-template #noUser>
             <li class="nav-item">
               <a routerLink="login" class="nav-link">Login</a>
             </li>
             <li class="nav-item">
               <a routerLink="register" class="nav-link" >Register</a>
             </li>
+            </ng-template>
           </ul>
         </div>
       </div>
