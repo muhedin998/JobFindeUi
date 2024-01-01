@@ -2,30 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d84d632-7b7f-4432-9436-f395e63b7f4b" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/119f90cc5d5de56ccda0eb5728313120.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/3d4867b65dff2efe52fc48ccf3d3129b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/64c8530ed3c38482b88dd569fa5db1b4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/76e468b60514152ac35fc0cf4a1055be.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/7a000ed9460782c26dbfef3f6077cbf0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/babel-webpack/8ed4ef1f11fbdc278be6ce5b9f6025d8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/config/auth.interceptors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/authenticate.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/authenticate.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/joblisting.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/joblisting.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/11.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/12.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/13.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/5.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/6.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/7.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/8.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.13/angular-webpack/76ca0cb09e6f48d6737a96776f72949ba10d7474/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/header.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/header.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/config/auth.interceptors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/config/auth.interceptors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/job.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/job.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/application.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/application.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/authenticate.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/authenticate.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ui/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ui/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/pages/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ALIC/Desktop/New folder (2)/JobFindeUi&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ALIC\\Desktop\\New folder (2)\\JobFindeUi\\node_modules\\typescript\\lib&quot;
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -101,7 +104,14 @@
       <workItem from="1703200151545" duration="3013000" />
       <workItem from="1703629186279" duration="7429000" />
       <workItem from="1703642152555" duration="743000" />
-      <workItem from="1703680848510" duration="4728000" />
+      <workItem from="1703680848510" duration="4883000" />
+      <workItem from="1703704319629" duration="738000" />
+      <workItem from="1703801113364" duration="273000" />
+      <workItem from="1703801391973" duration="138000" />
+      <workItem from="1703809809646" duration="54000" />
+      <workItem from="1703809869771" duration="59000" />
+      <workItem from="1703810053370" duration="267000" />
+      <workItem from="1703977325808" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1703635344607</created>

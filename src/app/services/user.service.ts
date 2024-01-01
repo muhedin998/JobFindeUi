@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
+import {BehaviorSubject, Observable, map, of, switchMap, tap} from "rxjs";
 import {UserModel} from "../models/user.model";
 import {HttpClient} from "@angular/common/http";
 import {Authenticate} from "../models/authenticate.model";
@@ -7,6 +7,7 @@ import {UserVo} from "../models/userVo.model";
 import {Store} from "@ngrx/store";
 import {AppState} from "../core/store/state/app.state";
 import {AddUser, RemoveUser} from "../core/store/actions/user.actions";
+import { getUserSelector } from '../core/store/selectors/user.selectors';
 
 @Injectable({
   providedIn: 'root'
@@ -37,12 +38,21 @@ export class UserService {
 
   addNewUserSession(data: { user: UserModel, token: string}): void {
     sessionStorage.setItem('token', data.token)
+    sessionStorage.setItem('user', JSON.stringify(data.user));
     console.log("Cuvanje u store")
     this.store.dispatch(new AddUser(this.userToUserVo(data.user)))
   }
 
   loggoutUser(user: Observable<UserVo> | undefined) {
     sessionStorage.removeItem('token')
+    sessionStorage.removeItem('user')
     this.store.dispatch(new RemoveUser())
+  }
+
+  isUserSignedIn(): Observable<boolean> {
+    let isSignedIn =  this.store.select(getUserSelector).pipe(
+      map((data: UserVo) => !!data.username)
+    );
+    return isSignedIn;
   }
 }

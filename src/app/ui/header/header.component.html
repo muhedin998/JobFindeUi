@@ -15,22 +15,31 @@
             <li class="nav-item">
               <a routerLink="" class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <ng-container *ngIf="userFullName$ | async as user; else noUser">
+
+            <ng-container *ngIf="user$ | async as user; else noUser">
               <li class="nav-item">
                 <p class="nav-link">Hello {{ user }}</p>
+              </li>
+              <li class="nav-item">
+                <a routerLink="newlisting" class="nav-link">New Listing</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="search" class="nav-link">Search for Jobs</a>
               </li>
               <li class="nav-item">
                 <button type="button" (click)="logout()"  class="nav-link">Logout</button>
               </li>
             </ng-container>
-            <ng-template #noUser>
+
+          <ng-template #noUser>
             <li class="nav-item">
               <a routerLink="login" class="nav-link">Login</a>
             </li>
             <li class="nav-item">
               <a routerLink="register" class="nav-link" >Register</a>
             </li>
-            </ng-template>
+          </ng-template>
+
           </ul>
         </div>
       </div>

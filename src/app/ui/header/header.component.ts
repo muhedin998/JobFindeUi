@@ -9,16 +9,19 @@ import {UserVo} from "../../models/userVo.model";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  user$?: Observable<UserVo>;
-  userFullName$?: Observable<string> =this.user$?.pipe(
-      map(user => user.fullName));
+  user$?: Observable<string | undefined>;
+  userForLogout?: Observable<UserVo>; 
   constructor(private headerService: HeaderService) { }
 
   ngOnInit(): void {
-    this.user$ = this.headerService.getCurrentUser();
+    this.userForLogout = this.headerService.getCurrentUser();
+    this.user$ = this.headerService.getCurrentUser().pipe(
+      map(user => user.fullName)
+    );
+    this.user$.subscribe(data => console.log(data))
   }
 
   logout() {
-    this.headerService.loggoutUser(this.user$);
+     this.headerService.loggoutUser(this.userForLogout);
   }
 }

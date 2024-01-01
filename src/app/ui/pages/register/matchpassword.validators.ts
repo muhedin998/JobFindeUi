@@ -1,3 +1,4 @@
+import { group } from "@angular/animations";
 import {AbstractControl, FormGroup, ValidationErrors, ValidatorFn} from "@angular/forms";
 
 export const passwordMatchValidator:ValidatorFn = (group: AbstractControl) : ValidationErrors | null => {
@@ -6,3 +7,7 @@ export const passwordMatchValidator:ValidatorFn = (group: AbstractControl) : Val
 
     return password === confirmPassword ? null : {passwordMismatch: true};
 }
+
+// export const usernameAndPasswordDoesntMatch = (group :AbstractControl) : ValidationErrors | null => {
+//     const 
+// }

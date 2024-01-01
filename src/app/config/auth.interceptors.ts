@@ -20,7 +20,6 @@ export class MyInterceptor implements HttpInterceptor {
         const modifiedRequest = request.clone({
             setHeaders: {
                 'Authorization':`Bearer ${token}`,
-                'Vary': 'Access-Control-Request-Headers'
             }
         });
 

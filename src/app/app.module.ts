@@ -16,6 +16,9 @@ import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 import {environment} from "../environments/environment";
 import {provideRouter} from "@angular/router";
 import {MyInterceptor} from "./config/auth.interceptors";
+import { JobCardComponent } from './ui/components/job-card/job-card.component';
+import { AddJobListingComponent } from './ui/pages/add-job-listing/add-job-listing.component';
+import { SearchComponent } from './ui/pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import {MyInterceptor} from "./config/auth.interceptors";
     FooterComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    JobCardComponent,
+    AddJobListingComponent,
+    SearchComponent
   ],
     imports: [
         HttpClientModule,

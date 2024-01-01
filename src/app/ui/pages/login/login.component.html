@@ -8,6 +8,9 @@
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+                <div class="err-message" *ngIf="form.get('password')?.hasError('serverError')">
+                    Username and password doesn't match
+                  </div>
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">

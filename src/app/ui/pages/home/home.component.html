@@ -1,3 +1,16 @@
 <div class="container">
     <h1>Hello World !</h1>
 </div>
+
+<ng-container *ngIf="isSignedIn | async; else notSigneIn">
+    <div class="container">
+        <app-job-card [jobPostings]="jobPostings"></app-job-card>
+    </div>
+</ng-container>
+<ng-template  #notSigneIn>
+    <div class="container">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <h1>You are not signed in please click <a routerLink="/login">here</a></h1>
+    </div>
+    </div>
+</ng-template>

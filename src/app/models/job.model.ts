@@ -3,7 +3,7 @@ export interface JobModel {
   titel: string;
   description: string;
   location: string;
-  salary: string;
+  salary: number;
   requirmnets: string;
   datePosted: string;
 }
