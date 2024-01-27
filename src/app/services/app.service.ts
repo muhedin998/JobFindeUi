@@ -20,4 +20,7 @@ export class AppService {
   public getJobPostings() {
     return this.http.get(this.BASE_URL + '/job/get-all-jobs')
   }
+  public getJobByTitle(title: string) {
+    return this.http.get(this.BASE_URL + '/job/' + title);
+  }
 }
