@@ -1,0 +1,7 @@
+<div class="container py-2" *ngIf="jobPostings | async as jobs">
+    <div class="card my-3" *ngFor="let job of jobs">
+        <div class="card-header">{{job.titel}}</div>
+        <div class="card-body">{{ job.description }} <br> {{ job.requirmnets}}</div>
+        <div class="card-footer"> {{ job.salary | currency }}</div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="d-flex justify-content-center align-items-center login-page">
+    <div class="frm-contaier">
+        <h3>Create new job listing here:</h3>
+        <form class="frm " [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="titel" class="form-label">Title</label>
+                <input type="text"  class="form-control" id="titel" formControlName="titel" aria-describedby="titel">
+                <!-- <div class="err-message" *ngIf="isFieldInvalid('fullName') && (form.get('fullName')?.dirty || form.get('fullName')?.touched)">
+                    Full Name is required.
+                </div> -->
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" formControlName="description" aria-describedby="description">
+                <!-- <div class="err-message" *ngIf="isFieldInvalid('username') && (form.get('username')?.dirty || form.get('username')?.touched)">
+                    Username is required.
+                </div> -->
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="email" class="form-control" formControlName="location" id="location" aria-describedby="location">
+                <!-- <div class="err-message" *ngIf="isFieldInvalid('email') && (form.get('email')?.dirty || form.get('email')?.touched)">
+                    Email is required.
+                </div> -->
+            </div>
+            <div class="mb-3">
+                <label for="salary" class="form-label">Salary</label>
+                <input type="number" class="form-control" formControlName="salary" id="salary">
+            </div>
+            <div class="mb-3">
+                <label for="requirmnets" class="form-label">Requirments</label>
+                <input type="text" class="form-control" formControlName="requirmnets" id="requirmnets">
+                <!-- <div class="err-message" *ngIf="form.hasError('passwordMismatch') && (form.get('confirmPassword')?.dirty || form.get('confirmPassword')?.touched)">
+                    Passwords do not match.
+                </div> -->
+            </div>
+            <div class="mb-3">
+                <label for="datePosted" class="form-label">Date Posted</label>
+                <input type="text" class="form-control" formControlName="datePosted" id="datePosted">
+                <!-- <div class="err-message" *ngIf="form.hasError('passwordMismatch') && (form.get('confirmPassword')?.dirty || form.get('confirmPassword')?.touched)">
+                    Passwords do not match.
+                </div> -->
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>
