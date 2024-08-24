@@ -1,15 +1,26 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
-import {combineLatest, debounceTime, filter, fromEvent, map, Observable, of, switchMap, tap } from 'rxjs';
-import { AppService } from 'src/app/services/app.service';
+import { Component, inject, OnInit } from "@angular/core";
+import { FormBuilder } from "@angular/forms";
+import {
+  combineLatest,
+  debounceTime,
+  filter,
+  fromEvent,
+  map,
+  Observable,
+  of,
+  switchMap,
+  tap,
+} from "rxjs";
+import { JobModel } from "src/app/models/job.model";
+import { AppService } from "src/app/services/app.service";
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  selector: "app-search",
+  templateUrl: "./search.component.html",
+  styleUrls: ["./search.component.scss"],
 })
 export class SearchComponent implements OnInit {
-   names: Observable<string[]> = of([
+  names: Observable<string[]> = of([
     "Alice",
     "Bob",
     "Charlie",
@@ -30,24 +41,28 @@ export class SearchComponent implements OnInit {
     "Quinn",
     "Rachel",
     "Samuel",
-    "Taylor"
+    "Taylor",
   ]);
 
-  search: HTMLElement = document.getElementById('exampleInputusername')!;
+  search: HTMLElement = document.getElementById("exampleInputusername")!;
   fb = inject(FormBuilder);
+  searchResult?: Observable<JobModel[]>;
   form = this.fb.nonNullable.group({
-    search: [''],
-  })
+    search: [""],
+  });
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService) {}
 
   ngOnInit(): void {
-       fromEvent( document.getElementById('exampleInputusername')!,'input')
-        .pipe(
-            debounceTime(700),
-            switchMap(() => this.appService.getJobByTitle(this.form.getRawValue().search)),
-            //map(namesArray => namesArray.filter(name => name.includes(this.form.getRawValue().search))),
-    ).subscribe((b) => console.log(b));
+    this.searchResult = fromEvent(
+      document.getElementById("exampleInputusername")!,
+      "input",
+    ).pipe(
+      debounceTime(700),
+      switchMap(() =>
+        this.appService.getJobByTitle(this.form.getRawValue().search),
+      ),
+      //map(namesArray => namesArray.filter(name => name.includes(this.form.getRawValue().search))),
+    );
   }
-
 }

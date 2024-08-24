@@ -1,15 +1,32 @@
 <div class="d-flex justify-content-center align-items-center search-page">
     <div class="frm-contaier mt-5">
-
         <form class="frm" [formGroup]="form">
             <div class="mb-3 d-flex flex-column">
-                <label for="exampleInputusername" class="form-label col-12">Find job that suits you:</label>
+                <label for="exampleInputusername" class="form-label col-12"
+                    >Find job that suits you:</label
+                >
                 <div class="d-flex col-9">
-                <input type="username" class="form-control col-9"  formControlName="search" id="exampleInputusername" aria-describedby="emailHelp">
-                <button type="submit" class="btn btn-success col-3">Search</button>
+                    <input
+                        type="text"
+                        class="form-control col-9"
+                        formControlName="search"
+                        id="exampleInputusername"
+                    />
+                    <button type="submit" class="btn btn-success col-3">
+                        Search
+                    </button>
+                </div>
+                <div class="m-5" *ngIf="searchResult | async as sere">
+                    <ul class="list-group">
+                        <li
+                            class="list-group-item bg-success"
+                            *ngFor="let item of sere"
+                        >
+                            {{ item.titel }}
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </form>
     </div>
 </div>

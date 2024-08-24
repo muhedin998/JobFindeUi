@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: normal;
+}

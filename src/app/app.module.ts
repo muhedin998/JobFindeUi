@@ -19,6 +19,8 @@ import {MyInterceptor} from "./config/auth.interceptors";
 import { JobCardComponent } from './ui/components/job-card/job-card.component';
 import { AddJobListingComponent } from './ui/pages/add-job-listing/add-job-listing.component';
 import { SearchComponent } from './ui/pages/search/search.component';
+import { LandingSearchComponent } from './ui/pages/home/components/landing-search/landing-search.component';
+import { SuggestedComponent } from './ui/pages/home/components/suggested/suggested.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SearchComponent } from './ui/pages/search/search.component';
     RegisterComponent,
     JobCardComponent,
     AddJobListingComponent,
-    SearchComponent
+    SearchComponent,
+    LandingSearchComponent,
+    SuggestedComponent
   ],
     imports: [
         HttpClientModule,
