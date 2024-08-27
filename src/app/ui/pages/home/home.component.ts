@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable, map, of } from 'rxjs';
 import { UserService } from 'src/app/services/user.service';
 import { JobModel } from 'src/app/models/job.model';

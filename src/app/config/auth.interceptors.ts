@@ -1,10 +1,5 @@
 import {inject, Injectable} from '@angular/core';
-import {
-    HttpInterceptor,
-    HttpRequest,
-    HttpHandler,
-    HttpEvent, HttpErrorResponse,
-} from '@angular/common/http';
+import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpErrorResponse } from '@angular/common/http';
 import {catchError, Observable, throwError} from 'rxjs';
 import {RemoveUser} from "../core/store/actions/user.actions";
 import {Store} from "@ngrx/store";

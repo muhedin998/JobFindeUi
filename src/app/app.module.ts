@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { HomeComponent } from './ui/pages/home/home.component';
@@ -22,23 +22,20 @@ import { SearchComponent } from './ui/pages/search/search.component';
 import { LandingSearchComponent } from './ui/pages/home/components/landing-search/landing-search.component';
 import { SuggestedComponent } from './ui/pages/home/components/suggested/suggested.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    LoginComponent,
-    RegisterComponent,
-    JobCardComponent,
-    AddJobListingComponent,
-    SearchComponent,
-    LandingSearchComponent,
-    SuggestedComponent
-  ],
-    imports: [
-        HttpClientModule,
-        BrowserModule,
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        HomeComponent,
+        LoginComponent,
+        RegisterComponent,
+        JobCardComponent,
+        AddJobListingComponent,
+        SearchComponent,
+        LandingSearchComponent,
+        SuggestedComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
         StoreModule.forRoot(appReducers),
@@ -46,13 +43,9 @@ import { SuggestedComponent } from './ui/pages/home/components/suggested/suggest
             maxAge: 25, // Retains last 25 states
             logOnly: environment.production, // Restrict extension to log-only mode,
             autoPause: true
-        }),
-    ],
-  providers: [    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: MyInterceptor,
-      multi: true,
-  },],
-  bootstrap: [AppComponent]
-})
+        })], providers: [{
+            provide: HTTP_INTERCEPTORS,
+            useClass: MyInterceptor,
+            multi: true,
+        }, provideHttpClient(withInterceptorsFromDi()),] })
 export class AppModule { }

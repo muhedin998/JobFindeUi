@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import {Authenticate} from "../models/authenticate.model";
-import * as http from "http";
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
 import {UserModel} from "../models/user.model";
 import {AddUser} from "../core/store/actions/user.actions";
