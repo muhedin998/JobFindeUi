@@ -21,6 +21,9 @@ import { AddJobListingComponent } from './ui/pages/add-job-listing/add-job-listi
 import { SearchComponent } from './ui/pages/search/search.component';
 import { LandingSearchComponent } from './ui/pages/home/components/landing-search/landing-search.component';
 import { SuggestedComponent } from './ui/pages/home/components/suggested/suggested.component';
+import {TagModule} from "primeng/tag";
+import { DataViewModule } from 'primeng/dataview';
+import {Button} from "primeng/button";
 
 @NgModule({ declarations: [
         AppComponent,
@@ -43,7 +46,7 @@ import { SuggestedComponent } from './ui/pages/home/components/suggested/suggest
             maxAge: 25, // Retains last 25 states
             logOnly: environment.production, // Restrict extension to log-only mode,
             autoPause: true
-        })], providers: [{
+        }), TagModule, DataViewModule, Button], providers: [{
             provide: HTTP_INTERCEPTORS,
             useClass: MyInterceptor,
             multi: true,
