@@ -13,11 +13,11 @@ export class SuggestedComponent  implements OnInit {
     {
       id: '1000',
       code: 'f230fh0g3',
-      name: 'Bamboo Watch',
-      description: 'Product Description',
+      name: 'Portreban Auto Mehaničar',
+      description: 'Potreban auto mehaničar sa iskustvom za rad u servisu u Beogradu. Poželjno posedovanje vozačke dozvole B kategorije.',
       image: 'bamboo-watch.jpg',
-      price: 65,
-      category: 'Accessories',
+      price: 1200,
+      category: 'Auto Mechanic',
       quantity: 24,
       inventoryStatus: 'INSTOCK',
       rating: 5
