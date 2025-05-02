@@ -6,4 +6,7 @@ export interface JobModel {
   salary: number;
   requirmnets: string;
   datePosted: string;
+  rating?: number;
+  category?: string;
+  image?: string;
 }

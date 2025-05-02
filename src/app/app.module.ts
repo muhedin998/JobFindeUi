@@ -23,9 +23,17 @@ import { LandingSearchComponent } from './ui/pages/home/components/landing-searc
 import { SuggestedComponent } from './ui/pages/home/components/suggested/suggested.component';
 import {TagModule} from "primeng/tag";
 import { DataViewModule } from 'primeng/dataview';
-import {Button} from "primeng/button";
+import {Button, ButtonModule} from "primeng/button";
+import {MenubarModule} from "primeng/menubar";
+import {GalleriaModule} from "primeng/galleria";
+import {CheckboxModule} from "primeng/checkbox";
+import {InputTextModule} from "primeng/inputtext";
+import {DividerModule} from "primeng/divider";
+import { CarouselModule } from 'primeng/carousel';
 
-@NgModule({ declarations: [
+
+@NgModule({
+    declarations: [
         AppComponent,
         HeaderComponent,
         FooterComponent,
@@ -38,7 +46,8 @@ import {Button} from "primeng/button";
         LandingSearchComponent,
         SuggestedComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent],
+    imports: [BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
         StoreModule.forRoot(appReducers),
@@ -46,7 +55,14 @@ import {Button} from "primeng/button";
             maxAge: 25, // Retains last 25 states
             logOnly: environment.production, // Restrict extension to log-only mode,
             autoPause: true
-        }), TagModule, DataViewModule, Button], providers: [{
+        }), TagModule, DataViewModule, Button, MenubarModule,
+        InputTextModule,
+        ButtonModule,
+        CheckboxModule,
+        GalleriaModule,
+        DividerModule,
+        CarouselModule
+    ], providers: [{
             provide: HTTP_INTERCEPTORS,
             useClass: MyInterceptor,
             multi: true,

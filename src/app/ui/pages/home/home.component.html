@@ -1,7 +1,5 @@
 <ng-container *ngIf="isSignedIn | async; else notSigneIn">
-    <div class="container">
-        <app-job-card [jobPostings]="jobPostings"></app-job-card>
-    </div>
+        <app-suggested [products]="jobPostings | async"></app-suggested>
 </ng-container>
 <ng-template #notSigneIn>
     <div class="container">
@@ -13,4 +11,4 @@
         </div>
     </div>
 </ng-template>
-<app-suggested> </app-suggested>
+<!--<app-suggested> </app-suggested>-->

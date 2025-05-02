@@ -17,4 +17,7 @@ export class JoblistingService {
       console.log(data)})
   }
 
+  getJobListings() {
+    return this.http.get<JobModel[]>(this.BASE_URL + '/job/get-all-jobs');
+  }
 }
