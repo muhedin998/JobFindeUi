@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "NodeJS 18" // Name from NodeJS Jenkins plugin
+        nodejs "NodeJS 23.11" // Name from NodeJS Jenkins plugin
     }
 
     stages {
